@@ -2,10 +2,10 @@
 
 import {ScrollTrigger, SplitText, gsap} from "gsap/all";  
 import React from "react";
-import Cocktails from "./components/Cocktails.jsx";
 import Navbar from "./components/navbar.jsx";
 import Hero from "./components/hero.jsx";
-import About from "./components/about.jsx";
+import Cocktails from "./components/Cocktails.jsx";
+import About from "./components/About.jsx";
 //register the plugins with gsap global scope
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -16,6 +16,7 @@ const App = () => {
       <Hero />
       <Cocktails />
       <About />
+      <div className="h-dvh bg-black"></div>
     </main>
   )
 }
